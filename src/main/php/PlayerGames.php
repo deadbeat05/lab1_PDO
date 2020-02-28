@@ -10,10 +10,10 @@ print "<table border='1'><tr><caption>Score table $player</caption><th>Name</th>
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     print "<tr><td>$row[player]</td>
 <td>$row[date]</td>
-<td>$rows[place]</td>
-<td>$rows[score]</td>
-<td>$rows[home]</td>
-<td>$rows[guests]</td>
+<td>$row[place]</td>
+<td>$row[score]</td>
+<td>$row[home]</td>
+<td>$row[guests]</td>
 </tr>";
 }
 print "</table>";
